@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TWTweetListViewController">
+            <connections>
+                <outlet property="spinner" destination="eWW-Ug-TAj" id="Ktg-y7-vgv"/>
+                <outlet property="tableView" destination="kZc-Rc-ZXF" id="5pa-Si-PWW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kZc-Rc-ZXF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eWW-Ug-TAj">
+                    <rect key="frame" x="175.66666666666666" y="336.66666666666669" width="64" height="64"/>
+                    <color key="tintColor" red="0.1894950437" green="0.68357672020000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="2aH-vE-kUa"/>
+                        <constraint firstAttribute="width" constant="64" id="xd8-Ni-Qpy"/>
+                    </constraints>
+                    <color key="color" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kZc-Rc-ZXF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="AUX-tK-pcb"/>
+                <constraint firstItem="eWW-Ug-TAj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kda-wN-Dst"/>
+                <constraint firstItem="kZc-Rc-ZXF" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="T9k-A2-Glm"/>
+                <constraint firstItem="kZc-Rc-ZXF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WMt-Pm-qet"/>
+                <constraint firstItem="eWW-Ug-TAj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="edI-tW-iqo"/>
+                <constraint firstItem="kZc-Rc-ZXF" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="ycg-cg-weq"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="111.5"/>
+        </view>
+    </objects>
+</document>
